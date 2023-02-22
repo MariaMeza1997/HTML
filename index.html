@@ -11,6 +11,24 @@
 
   </head>
 
+  <style>
+    .container{
+      background-color: brown;
+    }
+    label{
+      display: flex;
+      flex-direction: column;
+     
+    }
+
+    input{
+      width: 30%;
+    }
+
+
+  </style>
+
+
   <body>
 
     <header>cabecera</header>
@@ -31,7 +49,65 @@
             <h1>Proyecto inicial</h1>
             <hr>
             <br>
-            <p>hola <span>mundo</span></p>
+
+            <form id="container" class="two" name="formulario" method="post" action="#">
+              <label >Email
+                <input id="email"type="text" name="nombre" placeholder="" />
+              </label>
+               
+              <label>
+                Edad:
+                <input type="number" name="edad" min="18" max="100" placeholder="18" />
+              </label>
+      
+              <label>
+                Fecha de nacimiento:
+                <input type="date" name="edad" min="18" max="100" placeholder="18" />
+              </label>
+      
+              <label>
+                Password
+                <input type="password" name="edad" min="18" max="100" placeholder="Ingresa tu contraseña" />
+              </label>
+      
+              <label>
+                CV
+                <input type="file"/>
+              </label>
+      
+              <label>
+                sexo
+                <label> <input type="radio" name="sexo" value="H" /> Hombre </label>
+                <label> <input type="radio" name="sexo" value="H" /> Mujer</label>
+                <!-- Relación del texto con el segundo botón -->
+                <label> <input type="checkbox" name="sexo" value="M" /> Mujer </label>
+                <label> <input type="checkbox" name="sexo" value="M" /> Mujer </label>
+                <label> <input type="checkbox" name="sexo" value="M" /> Mujer </label>
+                <label> <input type="checkbox" name="sexo" value="M" /> Mujer </label>
+              </label>
+              <!-- Relación del texto con el primer botón -->
+      
+              <button type="submit">Enviar</button>
+              <button type="reset">reset</button>
+              
+            </form>
+            <hr>
+            <br>
+            <form id="container" class="two" name="formulario" method="post" action="#">
+              <label >Email or phone
+                <input id="email"type="text" name="nombre" placeholder="" />
+              </label>
+      
+              <label>
+                Password
+                <input type="password" name="edad" min="18" max="100" placeholder="" />
+              </label>
+      
+      
+              <button type="submit">Log in</button>
+
+              
+            </form>
         </div>
 
         <ul>
@@ -51,20 +127,37 @@
           <dd>Ave domestica 2</dd>
         </dl>
 
-        <table>
-          <tr>
-            <th>Titulo Columna 1</th>
-            <th>Titulo columna 1</th>
-            <th>Titulo columna 1</th>
-          </tr>
-          
-          <tr>
-            <th>Celda</th>
-            <th>Titulo columna 1</th>
-            <th>Titulo columna 1</th>
-          </tr>
-          
-        </table>
+      <table>
+        <!-- Cabecera -->
+        <tr>
+          <th rowspan="3">Título columna 1</th>
+          <!-- Celda de cabecera de la columna 1 -->
+          <th colspan="3">Título columna 2</th>
+          <!-- Celda de cabecera de la columna 2 -->
+          <th>Título columna 3</th>
+          <!-- Celda de cabecera de la columna 3 -->
+        </tr>
+        <!-- Primera fila -->
+        <tr>
+          <td>Celda 1x1</td>
+          <!-- Primera celda de la primera fila -->
+          <td>Celda 2x1</td>
+          <!-- Segunda celda de la primera fila -->
+          <td>Celda 3x1</td>
+          <!-- Tercera celda de la primera fila -->
+        </tr>
+        <!-- Segunda fila -->
+        <tr>
+          <td>Celda 1x2</td>
+          <!-- Primera celda de la segunda fila -->
+          <td>Celda 2x2</td>
+          <!-- Segunda celda de la segunda fila -->
+          <td>Celda 3x2</td>
+          <!-- Tercera celda de la segunda fila -->
+        </tr>
+      </table>
+
+      
 
     </main>
 
