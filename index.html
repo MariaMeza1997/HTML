@@ -11,24 +11,6 @@
 
   </head>
 
-  <style>
-    .container{
-      background-color: brown;
-    }
-    label{
-      display: flex;
-      flex-direction: column;
-     
-    }
-
-    input{
-      width: 30%;
-    }
-
-
-  </style>
-
-
   <body>
 
     <header>cabecera</header>
@@ -93,7 +75,7 @@
             </form>
             <hr>
             <br>
-            <form id="container" class="two" name="formulario" method="post" action="#">
+            <input id="container" class="two" name="formulario" method="post" action="#">
               <label >Email or phone
                 <input id="email"type="text" name="nombre" placeholder="" />
               </label>
@@ -103,11 +85,18 @@
                 <input type="password" name="edad" min="18" max="100" placeholder="" />
               </label>
       
+              <input  type="submit" value="login">Enviar</input>
       
               <button type="submit">Log in</button>
 
               
             </form>
+
+            <picture>
+              <img mediagroup="grupPrueba" src="" alt="prueba" width="120px" height="120px"/>
+            </picture>
+                        
+
         </div>
 
         <ul>
@@ -157,7 +146,7 @@
         </tr>
       </table>
 
-      
+      <video mediagroup="grupPrueba" src="/image/Grabación de pantalla desde 22-11-22 16:42:34.webm" poster="/image/prueba.jpg" controls loop>
 
     </main>
 
