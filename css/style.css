@@ -1,0 +1,53 @@
+.head footer head{
+ background-color: #4FB68E;
+}
+
+main{
+    background-color: #4FB68E;
+}
+
+.container{
+
+    background-color: #4FB68E;
+}
+
+.login-title{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: cursive;
+    font-weight: 900;
+    font-style:oblique;
+    color: chartreuse;
+    text-align: center; 
+    letter-spacing: 10px;
+    line-height: 10px;
+    text-indent: 120px;
+    /*text-decoration:overline;*/
+    text-transform:capitalize;
+}
+
+a{
+    text-decoration: none;
+
+ 
+}
+
+a:hover{
+  color: red;
+}
+
+a:focus{
+    border: 1px solid blue;
+}
+
+
+a:active{
+    color: red;
+  }
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
