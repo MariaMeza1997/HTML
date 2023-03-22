@@ -1,53 +1,96 @@
-.head footer head{
- background-color: #4FB68E;
+.landing_page{
+    width: 100%;
+    height: auto;
+    background-color:#E4EAE6 ;
+    padding: 131px 278px;
+
 }
 
-main{
-    background-color: #4FB68E;
+.landing_page_text{
+    width: 100%;
+    text-align: center;
 }
 
-.container{
-
-    background-color: #4FB68E;
+.landing_page_text h1{
+    color: #161718;
+    font-size: 48px;
+    font-family: Rubik;
+    font-weight: 600;
 }
 
-.login-title{
+.landing_page_text p{
+    padding-top: 16px;
+    color: #36414C;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+
+.landing_page_box{
+    padding-top: 61px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 86px;
+}
+
+.landing_page_box_one{
+    background-color:#FFFFFF ;
+    padding:36px 50px ;
+    border-radius: 10px;
+}
+
+.landing_page_box_one h1{
+    color: #161718;
+    font-family: Rubik;
+    font-weight: 600;
     font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-family: cursive;
-    font-weight: 900;
-    font-style:oblique;
-    color: chartreuse;
-    text-align: center; 
-    letter-spacing: 10px;
-    line-height: 10px;
-    text-indent: 120px;
-    /*text-decoration:overline;*/
-    text-transform:capitalize;
+    text-align: center;
+
 }
 
-a{
-    text-decoration: none;
-
- 
+.landing_page_box_one p{
+    color: #36414C;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size:16px;
+    text-align: left;
+    padding-top: 29px;
 }
 
-a:hover{
-  color: red;
+.landing_page_image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 143px;
+    row-gap: 61px;
+    padding-top: 88px;
+    
 }
 
-a:focus{
-    border: 1px solid blue;
+.landing_page_image_item_text h1{
+    font-family: Rubik;
+    color: #161718;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 37px 0;
+    text-transform: uppercase;
 }
 
-
-a:active{
-    color: red;
-  }
+.landing_page_image_item_text p{
+    color: #36414C;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size:16px;
+    line-height: 25px;
+}
 
 
   *{
     margin: 0;
     padding: 0;
     width: 100%;
+  }
+
+  p, h1{
+    margin-bottom: 0;
   }
