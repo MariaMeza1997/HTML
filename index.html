@@ -8,7 +8,6 @@
     <title>Prueba Html Grupo Lunes-Miercoles-</title>
     <link rel="icon" type="image/x-icon" href="/image/prueba.jpg">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> 
-    <link rel="stylesheet" href="css/style.css">
   </head>
   <style>
     main{
@@ -33,6 +32,22 @@
     small{
       font-size: 10px;
     }
+    table{
+      border: 2px solid #111;
+    }
+    th {
+      background: orange;
+      color: black;
+      text-transform: uppercase;
+      border: 2px solid #111;
+    }
+
+    td {
+      text-align: center;
+      border: 2px solid #111;
+      color: #333;
+      font-size: 18px;
+    }
     
     
   </style>
@@ -43,7 +58,7 @@
     <main>
 
       <!-- TEXTO -->
-        <h1>H1</h1>
+        <!-- <h1>H1</h1>
         <h2>H2</h2>
         <h3>H3</h3>
         <h4>H4</h4>
@@ -64,7 +79,7 @@
         <small>La comprensión lectora es la capacidad de entender lo que se lee</small>
         <br/>
         <cite>La comprensión lectora es la capacidad de entender lo que se lee</cite>
-        <br/>
+        <br/> -->
 
        
         <!-- LINK -->
@@ -76,34 +91,229 @@
         <!-- LISTAS -->
 
         <!-- LISTA ORDENADA -->
-        <ol start="7" type="A" reversed>
+        <!-- <ol start="7" type="A" reversed>
           <li value="">Item1</li>
           <li>Item2</li>
           <li>Item3</li>
           <li>Item4</li>
           <li>Item5</li>
-        </ol>
+        </ol> -->
 
         <!-- LISTA DESORDENADA -->
-        <ul>
+        <!-- <ul>
           <li value="">Item1</li>
           <li>Item2</li>
           <li>Item3</li>
           <li>Item4</li>
           <li>Item5</li>
-        </ul>
+        </ul> -->
 
 
-        <dl>
+        <!-- <dl>
           <dt>Gallina</dt>
           <dd>Ave doméstica del orden de las galliformes.</dd>
           <dd>Cobarde, pusilánime.</dd>
         
           <dt>Gato</dt>
           <dd>Animal que en algún momento dominó Internet y en el futuro dominará el mundo.</dd>
-        </dl>
+        </dl> -->
 
+        <!-- Tabla -->
+        <table>
+
+          <tr>
+            <th  rowspan="5" >Titulo ejemplo</th>
+          </tr>
+          <!-- Cabecera -->
+          <tr>
+            <th headers="1">Título columna 1</th>
+            <!-- Celda de cabecera de la columna 1 -->
+            <th>Título columna 2</th>
+            <!-- Celda de cabecera de la columna 2 -->
+            <th>Título columna 3</th>
+            <!-- Celda de cabecera de la columna 3 -->
+          </tr>
+          
+          <!-- Primera fila -->
+          <tr>
+            <td >Celda 1x1</td>
+            <!-- Primera celda de la primera fila -->
+            <td>Celda 2x1</td>
+            <!-- Segunda celda de la primera fila -->
+            <td>Celda 3x1</td>
+            <!-- Tercera celda de la primera fila -->
+          </tr>
+
+          <!-- Segunda fila -->
+          <tr>
+            <td>Celda 1x2</td>
+            <!-- Primera celda de la segunda fila -->
+            <td>Celda 2x2</td>
+            <!-- Segunda celda de la segunda fila -->
+            <td>Celda 3x2</td>
+            <!-- Tercera celda de la segunda fila -->
+          </tr>
+
+           <!-- Tercera fila -->
+           <tr>
+            <td>Celda 1x2</td>
+            <!-- Primera celda de la segunda fila -->
+            <td>Celda 2x2</td>
+            <!-- Segunda celda de la segunda fila -->
+            <td>Celda 3x2</td>
+          </tr>
+        </table>
+
+        <br/>
+        <!-- Formulario -->
+        <!-- 
+        <form method="post" action="https://formsubmit.co/marimezamartinez03@gmail.com">
+          <input type="text" placeholder="Escribe tu nombre" />
+          <br/>
+          <h5>Sexo</h5>
+          <label>Femenino</label>
+          <input name ="Femenino" value="femenino" type="checkbox">
+
+          <label>Masculino</label>
+          <input type="checkbox">
+          <br/>
         
+          <label>Actividades cotidiandas</label>
+          <br/>
+          <label>Ejercicio</label>
+          <input type="radio"/>
+          <br/>
+
+          <label>Leer</label>
+          <input type="radio"/>
+          <br/>
+
+          <label>comer</label>
+          <input type="radio"/>
+          <br/>
+
+
+          <label>Email</label>
+          <input type="email">
+          <br/>
+
+          <label>Fecha</label>
+          <input type="date">
+          <br/>
+
+          <label>Documento</label>
+          <input type="file"/>
+          <br/>
+
+          <label>Color</label>
+          <input type="color"/>
+          <br/>
+
+          <label>password</label>
+          <input type="password"/>
+          <br/>
+
+          <input type="number" />
+          <br/>
+
+          <textarea placeholder="Escribe tu historia"></textarea>
+          <br/>
+
+          <label>Selecciona la opcion que mas te describe</label>
+          <select>
+            <option>Divertido</option>
+            <option>Aburrido</option>
+            <option>Desconfiado</option>
+          </select>
+          <br/>
+
+          <datalist>
+
+          </datalist>
+
+          <input type="submit">
+          <input type="reset">
+        </form> -->
+
+        <!-- IMAGEN -->
+        <form name="formulario" method="post" ction="https://formsubmit.co/marimezamartinez03@gmail.com">
+          <!-- Agrupación de campos -->
+          <fieldset>
+            <legend>Datos personales</legend>
+        
+            <!-- Campo de texto -->
+            Nombre de usuario:
+            <input type="text" name="nombre" placeholder="Por ej: John Smith" />
+        
+            <!-- Campo numérico -->
+            Edad:
+            <input type="number" name="edad" min="18" max="100" placeholder="18" />
+        
+            <!-- Botón radio de opción -->
+            Sexo:
+            <!-- Primera opción -->
+            <input type="radio" name="sexo" value="H" /> Hombre
+            <!-- Segunda opción -->
+            <input type="radio" name="sexo" value="M" /> Mujer
+          </fieldset>
+          
+          <fieldset>
+            <legend>Profesion</legend>
+        
+            <!-- Campo de texto -->
+            Carrera Tecnica:
+            <input type="text" name="nombre" placeholder="Por ej: John Smith" />
+        
+            <!-- Campo numérico -->
+            Año:
+            <input type="number" name="edad" min="18" max="100" placeholder="18" />
+        
+            <!-- Botón radio de opción -->
+            Concluido:
+            <!-- Primera opción -->
+            <input type="radio" name="sexo" value="H" /> No
+            <!-- Segunda opción -->
+            <input type="radio" name="sexo" value="M" /> Si
+          </fieldset>
+
+
+            <!-- Botón de envío de formulario -->
+            <input type="submit" value="Enviar formulario" />
+            <!-- Botón de reseteo de formulario -->
+            <input type="reset" value="Borrar formulario" />
+          
+        </form>
+        
+        <br/>
+        <img src="./image/prueba.jpg" alt="Imagen_de_portafolio" />
+
+        <br/>
+        <img src="https://www.tuexperto.com/wp-content/uploads/2020/01/png.jpg.webp" alt="imagen_externa" />
+        <br/>
+
+        <figure>
+          <figcaption>Imagen Prueba</figcaption>
+          <img src="https://www.tuexperto.com/wp-content/uploads/2020/01/png.jpg.webp" alt="imagen_externa" />
+          <img src="./image/prueba.jpg" alt="Imagen_de_portafolio" />
+        </figure>
+        <br/>
+        <!-- AUDIO -->
+        <!-- <audio src="./image/Ejemplo-de-audio.mpeg"  loop controls ></audio> -->
+
+        <audio controls loop>
+          <source src="./image/Ejemplo-de-audio.mpeg"  />
+          <source src="./image/Ejemplo-de-audio.mpeg"  />
+        </audio>
+        <br/>
+
+        <!-- video -->
+        <video src="./image/Grabación de pantalla desde 22-11-22 16:42:34.webm" poster="./image/foliculos.png" controls ></video>
+        <br/>
+
+        <video controls >
+          <source src="./image/Grabación de pantalla desde 22-11-22 16:42:34.webm"   />
+        </video>
+
     </main>
 
 
