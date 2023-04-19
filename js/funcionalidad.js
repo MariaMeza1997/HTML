@@ -1,40 +1,76 @@
 /*console.warn("Advertencia")
 
 console.error("Error")*/
-
-var a ="10"//string
+var i = 0 
+var a =9 //string
 var b = 10 //number
 var c = true //boolean
+
 var d = ["Maria","Jose","Javier","Mariana","Leonora","Fany"]
 var e = new Array("Maria","Jose","Javier","Mariana","Leonora","Fany")
-const veggies = ['🥦', '🥒', '🌽', '🥕'];
-const saladCopy = [...salad, ...veggies]
+const veggies = ['🥦', '🥒', '🌽', '🥕','🥦'];
 const salad = new Array('🍅', '🍄', '🥦', '🥒', '🌽', '🥕', '🥑');
-console.log()//Original
-console.log()//Agregar emoji
-console.log()//Eliminar emoji
-console.log()//tamaño
-console.log()//emoji especifico
-console.log('⛄')
+const saladCopy = [...salad, ...veggies]
+
+
 
 let [tomate, hongo, zanahoria] = ['🍅', '🍄', '🥕'];
-console.log(tomate)
 
-console.log(Array.isArray(salad))
+//var calificacion = a === b ?  console.log("Verdarero") : console.log("Falso");
 
+if ( veggies.length >0 ){
 
-
-/*if(a == b){
-    console.log("Verdarero")
-}else{
-    console.log("Falso")
-}
-*/
-
-function varible(){
-    const c = 9 
+    console.log("Dentro de la condicional ")
     
+    var i = 0 
+
+    // Condición: Mientras la variable contador sea menor de 5
+   /* while (i <= veggies.length) {
+
+      switch(veggies[i]){
+        case '🥦':
+            console.log("brocoli")
+        break;
+
+        case '🥒':
+            console.log("pepino")
+        break;
+
+        case '🌽':
+            console.log("elote")
+        break;
+
+        case '🥕':
+            console.log("zanahoria")
+        break;
+
+    }
+    
+      i = i + 1; // Incrementamos el valor de i
+    }*/
+
+    for( i ; i <= veggies.length; i = i + 1 ){
+        
+        switch(veggies[i]){
+            case '🥦':
+                console.log("brocoli")
+            break;
+    
+            case '🥒':
+                console.log("pepino")
+            break;
+    
+            case '🌽':
+                console.log("elote")
+            break;
+    
+            case '🥕':
+                console.log("zanahoria")
+            break;
+    
+        }
+
+    }
+   
+
 }
-
-varible()
-

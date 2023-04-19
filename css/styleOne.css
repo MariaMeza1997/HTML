@@ -1,0 +1,34 @@
+/*Div*/
+.contenido-prueba {
+    background-color: red;
+}
+.contenido-prueba + .contenido-prueba_two{
+    border: 5px solid black;
+}
+.contenido-prueba_two {
+    background-color: blue;
+}
+
+.contenido-prueba > h1 {
+    font-size: 90px;
+
+}
+.contenido_extra{
+    border: 5px solid black;
+}
+
+/*id*/
+#id_prueba_uno{
+    background-color: rgb(24, 105, 140);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
