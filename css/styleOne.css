@@ -3,14 +3,40 @@
     background-color: red;
 }
 .contenido-prueba + .contenido-prueba_two{
-    border: 5px solid black;
-}
-.contenido-prueba_two {
-    background-color: blue;
+    width: 100%;
+    /*border: 5px solid black;*/
+    border-width: 5px;
+    border-style:dotted;
+    border-color: black;
+    position:sticky;
+
 }
 
+.cube_oine{
+
+    width: 50px;
+    height: 50px;
+    background-color:aqua ;
+    float: left;
+
+
+}
+
+
+.cube_two{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+     z-index: -10;
+    background-color: blueviolet;
+    top: 50px;
+}
 .contenido-prueba > h1 {
-    font-size: 90px;
+    color: aqua;
+    font-size:15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-style: oblique;
 
 }
 .contenido_extra{
@@ -23,9 +49,11 @@
 }
 
 body{
+
     display: flex;
     justify-content: center;
     align-items: center;
+ 
 }
 
 *{
