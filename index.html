@@ -15,8 +15,34 @@
 
     <main>
 
-      <div class="cube_oine"></div>
-      <div class="cube_two"></div>
+      <form id="form">
+
+        <div class="form">
+
+          <div class="input_form_name">
+            <label>Nombre de usuario</label>
+            <input id="name" type="text" placeholder="Ingresa tu nombre de usuario"></div>
+            <p class="input_form_name_error">Campo necesario</p>
+          </div>
+
+          <div class="input_form_email">
+            <label>Email</label>
+            <input id="email" type="text" placeholder="Ingresa tu email "></input>
+            <p class="input_form_email_error">Ingresa un correo electronico</p>
+          </div>
+
+          <div class="input_form_password">
+            <label>Contraseña</label>
+            <input id ="password" type="text" placeholder="Ingresa tu contraseña"></input>
+            <p class="input_form_password_error">Campo necesario</p>
+          </div>
+
+          <button type="submit">Enviar</button>
+
+        </div>
+
+      </form>
+
 
 
     </main>
@@ -25,8 +51,8 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     
-    <script src="/js/funcionalidad.js" charset="utf-8"></script>
-
+   
+    <script src="/js/validation.js" charset="utf-8"></script>
 
   </body>
 

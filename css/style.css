@@ -32,6 +32,25 @@
     
 }
 
+.landing_page_modal{
+    position: absolute;
+    margin: auto;
+    background-color: #36414C;
+    width: 200px;
+    height: 200px;
+    display: none;
+    padding: 5px;
+    z-index: 10;
+}
+
+.landing_page_modal--active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
 
 
 @media(max-width: 1199px){
