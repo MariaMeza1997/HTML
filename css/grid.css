@@ -1,0 +1,33 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.image--one{
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/clasificacion.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.image--two{
+
+}
+
+.imagen-three{
+    
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
