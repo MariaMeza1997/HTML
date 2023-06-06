@@ -1,43 +1,63 @@
-var num1 = 10;
-var num2 = 12;
-var num3 = 20;
+var num1 = 10//number
+var name = "Maria Meza"//String
+var num3 = true//bolean
+var num4 = "10" //string
+var num5= "dddadadada"
 
-//*Operadores aritmeticos
-//*Suma
-var Result = num1 + num1;
-console.log("Suma de a + b: " + Result)
+//*Tipo datos 
+//console.log("El tipo de dato del num1 es : " + typeof(num4))
 
-//*Resta
-Result= num2 - num1;
-console.log("Resta de a + b: " + Result)
+//*Cambiar el tipo de dato
+//String ---> number
 
-//*Multiplicacion
-Result = num1 * num3;
-console.log("Multiplicacion de a + b: " + Result)
+console.log("El tipo de dato previo es :" + typeof(num4))
+var StringNew = Number(num4)
+console.log("El tipo de dato es nuevo: " + typeof(StringNew))
 
-//*Division
-Result = num3 / num1;
-console.log("Division de a + b: " + Result)
+//number -->String
+console.log("El tipo de dato previo es :" + typeof(StringNew))//Number
+var NumberNew = String(StringNew)
+console.log("El tipo de dato es nuevo: " + typeof(NumberNew))
 
-//*Modulo 
-Result = num3 % num1;
-console.log("Modulo de a + b: " + Result)
+//String o number a bolean
+console.log("El tipo de dato previo es :" + typeof(num5))
+var BoleanNew = Boolean(num5)
+console.log("El tipo de dato es nuevo: " + typeof(BoleanNew))
+console.log("El tipo de bolean es : " + BoleanNew)//*true o false
 
-//*Exponente
-Result = num1 ** 2;
-console.log("Exponente de a + b: " + Result)
+//*Definir un arreglo
+
+//*CRUD
+//create
+const salad = ['🍅', '🍄', '🥦', '🥒', '🌽', '🥕', '🥑'];
+/*const salad = new Array('🍅', '🍄', '🥦', '🥒', '🌽', '🥕', '🥑');*/
+console.log(salad.length)
 
 
-/*
-Tenemos tres numeros 
+//*CRUD
+//agregar
+salad.push("🥜")//*AL FINAL
+console.log(salad)
 
-a= 20 , b = 3 c =24
+salad.unshift("🥜")//*Al inicio
+console.log(salad) 
 
-Nota: Todo tiene que llkevar comentario e impresion en console 
+//Delete
+salad.pop()//*Eliminar el dato
+console.log(salad) 
 
-1) Suma de los tres numeros
-2)La resta de (a+b)-c
-3)Multiplicacion de a x b x b x c
-4)Modulo de a / b
-5) Eleva c a la quinta potencia 
-*/
+
+salad.shift()//*Eliminar el primer dato
+console.log(salad) 
+
+
+//Copy
+const saldCopy = salad.slice()
+console.log(saldCopy)
+
+
+/*Ejercio
+1) Definir un arreglo 
+2) Agregar elemento al final del arreglo -->emoji
+3) Eliminar primer dato del arreglo 
+4) Realizar una copia de ese arreglo */
