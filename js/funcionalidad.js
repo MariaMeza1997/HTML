@@ -1,28 +1,18 @@
-/*for(var productos= 1000; productos>=800 ; productos= productos-1 ){
-    console.log("En el inventario tenemos " + productos + "productos");
-    if(productos== 800){
-        console.log("Se requiere pedir mas producto")
-    }
-}*/
+const target = document.getElementById('target_button')
+const modal = document.querySelector('.modal_example')
+const buttonDelete = document.querySelector('.close_modal')
 
-/*console.log("Ciclo While")
-var productostwo= 1000;
-while( productostwo >=800){
-    console.log("En el inventario tenemos " + productostwo + "productos");
-    if( productostwo == 800){
-        console.log("Se requiere pedir mas producto")
-    }
-    productostwo= productostwo - 1;
-}*/
+//*declaracion
 
-console.log("ciclo Do-while")
-var productosThree= 1000;
+const open = () =>{
+    modal.classList.add('modal_example--active')
+}
 
-do{
-    console.log("En el inventario tenemos" + productosThree + "productos")
-    if(productosThree == 800){
-        console.log("Se requiere pedir más producto")
-    }
-    productosThree = productosThree -1
-    
-}while(productosThree >=800)
+//*Expresion
+var closeModal = function(){
+    modal.classList.remove('modal_example--active')
+}
+
+
+target.addEventListener('click', open)
+buttonDelete.addEventListener('click', closeModal)
