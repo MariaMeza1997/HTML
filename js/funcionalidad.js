@@ -1,18 +1,9 @@
-const target = document.getElementById('target_button')
-const modal = document.querySelector('.modal_example')
-const buttonDelete = document.querySelector('.close_modal')
+const form = document.getElementById("form_one")
+const nombre = document.getElementById('name')
 
-//*declaracion
 
-const open = () =>{
-    modal.classList.add('modal_example--active')
+function Validation(){
+    console.log(nombre.value)
+
 }
 
-//*Expresion
-var closeModal = function(){
-    modal.classList.remove('modal_example--active')
-}
-
-
-target.addEventListener('click', open)
-buttonDelete.addEventListener('click', closeModal)

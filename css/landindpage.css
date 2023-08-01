@@ -6,10 +6,7 @@
 
 }
 .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    
     max-width: 700px;
     margin: auto;
 }
@@ -211,5 +208,54 @@ p, h1{
 .modal_example h1{
     font-size: 24px;
     color: white;
+
+}
+
+.input_form {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    width: 100%;
+    padding: 5px;
+}
+
+.input_form--errors{
+    border: 1px solid red;
+}
+
+.form_error{
+    display: none;
+    color: red;
+    text-align: start;
+    font-size: 10px;
+
+}
+
+.form_error--active{
+    display: block;
+    
+}
+
+.form_container {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button_form{
+    background-color:cadetblue;
+    color: black;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    border: 0px;
+    cursor: pointer;
 
 }
