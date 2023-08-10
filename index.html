@@ -14,6 +14,10 @@
     span{
       color: blue;
     }
+    tr,th,td{
+      border: 1px solid black;
+    }
+
   </style>
 
   <body>
@@ -27,18 +31,18 @@
     <!--Comentario-->
     
     <!--*! Etiquetas titulos -->
-      <h1>Etiqueta h1</h1>
+      <!-- <h1>Etiqueta h1</h1>
       <h2>Etiqueta h2</h2>
       <h3>Etiqueta h3</h3>
       <h4>Etiqueta h4</h4>
       <h5>Etiqueta h5</h5>
-      <h6>Etiqueta h6</h6>
+      <h6>Etiqueta h6</h6> -->
 
       <!-- //*Etiquetas de parrafos -->
-      <p>Textos</p>
+      <!-- <p>Textos</p> -->
 
       <!-- *? Etiqueta pre -->
-      <pre>Texto preformateado</pre>
+      <!-- <pre>Texto preformateado</pre>
 
       <p><span>Texto span</span> one</p><br><p>Hola</p>
 
@@ -56,10 +60,87 @@
 
       <p><small>Texto span</small> one</p>
 
-      <p><cite>Texto span</cite> one</p>
+      <p><cite>Texto span</cite> one</p> -->
 
       <!-- //*Navegacion -->
       <a download="doc" href="./image/doctor.png">Da click aqui</a>
+
+      <!-- //*Listas desordenadas -->
+      <ul type="circle">
+        <li>Item1</li>
+        <li>Item2</li>
+      </ul>
+
+      <!-- //*Listas ordenadas -->
+      <ol start="6" type="I" reversed>
+        <li value="lapiz">Lapiz</li>
+        <li value="cuaderno">Cuaderno</li>
+      </ol>
+
+      <!-- //*Listas descripcion -->
+      <dl>
+        <dt>Perro</dt>
+        <dd>Cariñoso</dd>
+        <dd>Color Negro</dd>
+        <dd>Ojos negros</dd>
+      </dl>
+
+      <!-- //*Tabla -->
+      <table>
+        <tr>
+          <th scope="row">titulo 1</th>
+          <th>titulo 2</th>
+        </tr>
+
+        <tr>
+          <td>Celda 1x1</td>
+          <td>Celda 2x1</td>
+        </tr>
+
+        <tr>
+          <td>Celda 1x2</td>
+          <td>Celda 2x2</td>
+        </tr>
+
+      </table>
+
+      <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <h1>Formularios</h1>
+        <!-- //*Formulario -->
+        <form  name="for_one" action="" style="display: flex; justify-content: end; align-items: start; flex-direction: column;">
+          <label>Texto:</label>
+          <input type="text" />
+  
+          <label>Password:</label>
+          <input type="password" />
+  
+          <div>
+            <label>Sexo: </label>
+            <input value="hombre" type="radio" />
+            <label>Hombre</label>
+            <input value="Mujer" type="radio" />
+            <label>Mujer</label>
+          </div>
+          
+          <div>
+            <label>Vehiculo: </label>
+            <label>Moto</label>
+            <input value="Moto" type="checkbox" />
+            <label>Coche</label>
+            <input value="Coche" type="checkbox" />
+          </div>
+         
+  
+          <div>
+            <button type="submit">Enviar consulta</button>
+            <button type="reset">Restablecer</button>
+          </div>
+
+        </form>
+      </div>
+
+     
+
     </main>
 
     <footer>
